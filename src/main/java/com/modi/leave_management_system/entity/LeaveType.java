@@ -13,7 +13,7 @@ import lombok.NoArgsConstructor;
 public class LeaveType {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private long leaveTypeId;
+    private Long leaveTypeId;
     @Column(nullable = false, unique = true)
     private String leaveTypeName; //Casual,Sick,Vacation,Earned
     private int defaultDaysPerYear;

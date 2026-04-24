@@ -17,13 +17,14 @@ import java.util.List;
 public class Employee {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private long empId;
+    private Long empId;
     @Column(nullable = false)
     private String empName;
     @Column(nullable = false, unique = true)
     private String empEmail;
     @Enumerated(EnumType.STRING)
     private Role role; //EMPLOYEE, MANAGER, ADMIN
+    private String password;
     @ManyToOne
     @JoinColumn(name="manager_id") //self referncing foreign key, who is the manager to this emp, one manager can have many employees
     private Employee manager;
