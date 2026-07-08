@@ -1,0 +1,13 @@
+---- Leave Types
+--INSERT IGNORE INTO leave_types (name, default_days_per_year, carry_forward_allowed)
+--VALUES
+--('Casual', 12, false),
+--('Sick', 10, false),
+--('Earned', 15, true);
+--
+---- Employees (manager first, then employees under them)
+--INSERT IGNORE INTO employees (name, email, role, manager_id)
+--VALUES
+--('Ravi Kumar', 'ravi@company.com', 'ADMIN', null),
+--('Priya Sharma', 'priya@company.com', 'MANAGER', 1),
+--('Modhita T', 'modi@company.com', 'EMPLOYEE', 2);
